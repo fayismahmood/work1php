@@ -1,5 +1,10 @@
 body > .card {
   margin: 40px auto;
+  border-radius: 10px;
+  border: none;
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 60px #c4cad9,  -20px -20px 60px #ffffff;
+          box-shadow: 20px 20px 60px #c4cad9,  -20px -20px 60px #ffffff;
 }
 
 .Main {
@@ -71,8 +76,8 @@ body > .card {
   height: 3px;
   width: 100%;
   background: black;
-  -webkit-animation: tabAnim .5s ease-in;
-          animation: tabAnim .5s ease-in;
+  -webkit-animation: tabAnim .2s ease-in;
+          animation: tabAnim .2s ease-in;
 }
 
 .newCarsBikes {
@@ -92,7 +97,7 @@ body > .card {
   height: fit-content;
   margin: 10px 0px;
   display: block;
-  border-radius: 10% 35% 35% 10% / 10% 50% 50% 10%;
+  border-radius: 0px 15px 15px 0px;
   border: solid #707070 1px;
   padding: 5px 10px;
   font-size: 15px;
@@ -184,6 +189,7 @@ body > .card {
 }
 
 .compare .Tabs .sliderControll {
+  z-index: 1;
   position: relative;
   width: 80px;
 }
@@ -206,6 +212,12 @@ body > .card {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0px 10px;
+  width: 250px !important;
+}
+
+.compare .col-8 .swiper-slide img {
+  width: 220px;
 }
 
 .dealings {

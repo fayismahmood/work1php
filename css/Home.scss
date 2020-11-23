@@ -1,5 +1,11 @@
 body>.card{
     margin:40px auto;
+
+    border-radius: 10px;
+    border: none;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #c4cad9, 
+             -20px -20px 60px #ffffff;
 }
 
 .Main{
@@ -58,7 +64,7 @@ body>.card{
                     height: 3px;
                     width: 100%;
                     background: rgb(0, 0, 0);
-                    animation:tabAnim .5s ease-in ;
+                    animation:tabAnim .2s ease-in ;
 
                 }
             }
@@ -79,7 +85,7 @@ body>.card{
                 height: fit-content;
                 margin:10px 0px;
                 display: block;
-                border-radius: 10% 35% 35% 10% / 10% 50% 50% 10%    ;
+                border-radius: 0px 15px 15px 0px ;
                 border: solid #707070 1px;
                 padding: 5px 10px;
                 font-size: 15px;
@@ -152,6 +158,7 @@ body>.card{
         grid-auto-flow: column;
         justify-content: space-between;
         .sliderControll{
+            z-index: 1;
             position: relative;
             width: 80px;
             .swiper-button-prev,.swiper-button-next{
@@ -180,6 +187,11 @@ body>.card{
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+            padding:0px 10px;
+            width: 250px !important;
+            img{
+                width: 220px;
+            }
         }
     }
 }
