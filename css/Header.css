@@ -2,6 +2,16 @@
     background: #063051;
     color: white;
   }
+
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+  }
+  
   
   .primary:hover {
     color: rgba(255, 255, 255, 0.651);
@@ -47,17 +57,17 @@
     background: #c5c7c8;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 225px auto 30%;
-        grid-template-columns: 225px auto 30%;
+    -ms-grid-columns: 350px auto 30%;
+        grid-template-columns: 350px auto 30%;
     padding: 10px 50px;
   }
   
   footer .services {
     display: -ms-grid;
     display: grid;
-    font-size: x-small;
-    -ms-grid-columns: (75px)[auto-fill];
-        grid-template-columns: repeat(auto-fill, 75px);
+    font-size: small;
+    -ms-grid-columns: (100px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 100px);
   }
   
   footer .followUs, footer .contactUs {

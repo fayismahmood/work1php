@@ -1,8 +1,16 @@
+body>.card{
+    margin:40px auto;
+}
+
+.Main{
+    margin-top: 100px !important;
+    
+}
 .disp{
     height: 400px;
     background: url("../img/Homedis.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     position: relative;
     .textCont{
         position: absolute;
@@ -178,6 +186,9 @@
 
 .dealings{
     padding: 30px;
+    .row>div{
+        padding:0 30px;
+    }
     .compDetailes{
         display: grid;
         place-items: center;

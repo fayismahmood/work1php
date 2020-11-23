@@ -1,8 +1,15 @@
+body > .card {
+  margin: 40px auto;
+}
+
+.Main {
+  margin-top: 100px !important;
+}
+
 .disp {
   height: 400px;
   background: url("../img/Homedis.jpg");
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -203,6 +210,10 @@
 
 .dealings {
   padding: 30px;
+}
+
+.dealings .row > div {
+  padding: 0 30px;
 }
 
 .dealings .compDetailes {

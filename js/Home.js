@@ -48,7 +48,7 @@ var mySwiper = new Swiper('.newCarsBikes .swiper-container', {
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 50,
+      rotate: 80,
       stretch: 0,
       depth: 100,
       modifier: 1,

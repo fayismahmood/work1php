@@ -5,7 +5,7 @@ function homePage(){
 <link rel="stylesheet" href="js/swipper/swiper-bundle.css">
 <script src="js/swipper/swiper-bundle.js"></script>
 
-<div class="Main container card">
+<div class=" container card Main">
     <div class="row disp">
         <div class="textCont">
             <h4>
@@ -319,7 +319,7 @@ function homePage(){
 </div>
 <div class="container card dealings">
     <div class="row">
-        <div class="col-4">
+        <div class="col-5">
             <h6>
                 Want to Buy a Car/ Bike<br>
                  Want to get your vehicle serviced?? <br>
@@ -352,7 +352,7 @@ function homePage(){
                 </div>
             </div>
         </div>
-        <div  class="col-4"></div>
+        <div style="background-image:url(img/ranger.png);background-size:cover;" class="col-3"></div>
         <div class="col-4 compDetailes">
             
             <ul>
