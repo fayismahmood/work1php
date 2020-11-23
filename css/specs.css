@@ -1,0 +1,393 @@
+
+.main {
+  padding: 30px 100px;
+}
+
+.main > .container ol {
+  background: none !important;
+  font-size: 8px;
+}
+
+.main > .container .innerGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+}
+
+.main > .container .innerGrid .contentSeg i {
+  margin-left: 10px;
+}
+
+.main > .container .innerGrid .contentSeg h5, .main > .container .innerGrid .contentSeg h6 {
+  margin: 0 5px;
+}
+
+.main > .container .innerGrid .contentSeg .rating svg {
+  stroke: orange;
+  fill: none;
+  stroke-width: 31px;
+}
+
+.main > .container .innerGrid .contentSeg .rating svg.rated {
+  fill: orange;
+}
+
+.main > .container .img div {
+  border: solid 1px;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main > .container .img img {
+  height: 100px;
+}
+
+.tabs .Tab, .tabs .PriceTab {
+  background: #ffea74;
+  border: solid 1px #063051;
+  font-size: 13px;
+}
+
+.tabs .Tab a, .tabs .PriceTab a {
+  padding: 5px 20px;
+  color: #063051;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tabs .Tab a:hover::after, .tabs .PriceTab a:hover::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #8493a0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tabs .Tab a.active::after, .tabs .PriceTab a.active::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #063051;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tabs .row {
+  padding: 30px;
+}
+
+.tabs .tabContents {
+  border-bottom: 1px solid gray;
+}
+
+.tabs .tabContents > * {
+  display: none;
+}
+
+.tabs .tabContents > *.active {
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.tabs .icoSet {
+  padding: 50px 0;
+  border-bottom: 1px solid gray;
+}
+
+.tabs .icoSet .IconGrid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  grid-gap: 10px;
+}
+
+.tabs .icoSet .IconGrid > div {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.tabs .icoSet .IconGrid > div span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.tabs .icoSet .IconGrid > div span:nth-child(3) {
+  color: blue;
+}
+
+.tabs .icoSet .IconGrid > div img {
+  margin: 15px;
+  height: 50px;
+}
+
+.tabs .price {
+  margin-top: 30px;
+}
+
+.tabs .PriceTab {
+  background: #063051;
+  padding: 0px 10px;
+  margin-top: 30px;
+}
+
+.tabs .PriceTab a {
+  padding: 8px 5px;
+  color: white;
+}
+
+.tabs .PriceTab a:hover::after, .tabs .PriceTab a.active::after {
+  background: white;
+  bottom: 3px;
+}
+
+.tabs .PriceTabCont {
+  border: solid 1px #707070;
+}
+
+.tabs .PriceTabCont .grid > .Head, .tabs .PriceTabCont .grid > .Cont > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px auto 20% 20%;
+      grid-template-columns: 30px auto 20% 20%;
+}
+
+.tabs .PriceTabCont .grid > .Head > div, .tabs .PriceTabCont .grid > .Cont > div > div {
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  vertical-align: baseline;
+}
+
+.tabs .PriceTabCont .grid > .Head.footer, .tabs .PriceTabCont .grid > .Cont > div.footer {
+  -ms-grid-columns: none;
+      grid-template-columns: none;
+  place-items: center;
+  position: relative;
+}
+
+.tabs .PriceTabCont .grid > .Head.footer .notif, .tabs .PriceTabCont .grid > .Cont > div.footer .notif {
+  position: absolute;
+  left: -35px;
+  display: block;
+  -webkit-transform: translate(60px, 0);
+          transform: translate(60px, 0);
+}
+
+.tabs .PriceTabCont .grid > .Head {
+  background: #e3e4e5;
+}
+
+.tabs .PriceTabCont .grid {
+  padding-bottom: 20px;
+}
+
+.tabs .detailedSec {
+  margin: 20px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto max-content;
+      grid-template-columns: auto -webkit-max-content;
+      grid-template-columns: auto max-content;
+}
+
+.tabs .collapses {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.tabs .collapses > div {
+  margin: 10px 0;
+}
+
+.tabs .collapses div.coll {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto max-content;
+      grid-template-columns: auto -webkit-max-content;
+      grid-template-columns: auto max-content;
+  padding: 5px 10px;
+  border-radius: 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: solid 1px #063051;
+  color: #063051;
+}
+
+.tabs .collapses div.coll svg {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.tabs .collapses div.coll.collapsed svg {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.tabs .features {
+  margin-top: 20px;
+}
+
+.tabs .features div.cont {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (49%)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 49%);
+  grid-gap: 10px;
+  background: #eef0f2;
+  border: solid 2px #707070;
+  font-weight: 600;
+}
+
+.tabs .sliderArea {
+  margin-top: 20px;
+}
+
+.tabs .sliderArea .tabberGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto max-content;
+      grid-template-columns: auto -webkit-max-content;
+      grid-template-columns: auto max-content;
+}
+
+.tabs .sliderArea .tabberGrid .caroAction {
+  position: relative;
+  width: 40px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.tabs .sliderArea .tabberGrid .caroAction i {
+  background: none;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  font-weight: 900;
+}
+
+.tabs .sliderArea .tabberGrid .caroAction i svg {
+  height: 15px;
+}
+
+.tabs .sliderArea .CarTab {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #063051;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tabs .sliderArea .carousel {
+  margin-top: 20px;
+}
+
+.tabs .sliderArea .carousel-item > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 30% 30%;
+      grid-template-columns: 30% 30% 30%;
+  grid-gap: 30px;
+}
+
+.tabs .sliderArea .carousel-item > div .card {
+  text-align: center;
+  font-size: x-small;
+}
+
+.tabs .AskedQuest {
+  margin-top: 30px;
+}
+
+.tabs .AskedQuest .card {
+  padding: 30px;
+  font-size: x-small;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.tabs .contact {
+  margin-top: 25px;
+}
+
+.tabs .contact div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto max-content;
+      grid-template-columns: auto -webkit-max-content;
+      grid-template-columns: auto max-content;
+}
+
+.tabs .contact div button {
+  margin-left: 15px;
+  color: white;
+}
+
+.LatestNews .cont {
+  background: #eef0f2;
+  border: solid 1px #707070;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 15px;
+  padding: 20px;
+}
+
+.LatestNews .cont > div {
+  display: -ms-grid;
+  display: grid;
+  font-size: x-small;
+  grid-gap: 15px;
+  font-weight: 900;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+.FindNearest {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.FindNearest * {
+  margin-top: 10px;
+}
+
+.compareWith {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 20px;
+  background: #eef0f2;
+  padding: 20px;
+}
+
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,68 @@
+.primary {
+    background: #063051;
+    color: white;
+  }
+  
+  .primary:hover {
+    color: rgba(255, 255, 255, 0.651);
+  }
+  
+  .subnavbar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px 1fr auto;
+        grid-template-columns: 180px 1fr auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-right: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  .subnavbar form div > * {
+    height: 32px;
+    border-radius: 18px;
+  }
+  
+  .subnavbar form div {
+    margin-bottom: 0 !important;
+    margin: 3px 0px;
+  }
+  
+  .subnavbar > ul {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  .subnavbar > ul > li {
+    padding: 0 15px;
+  }
+  
+  .subnavbar a {
+    color: #ffffff;
+  }
+  footer {
+    background: #c5c7c8;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 225px auto 30%;
+        grid-template-columns: 225px auto 30%;
+    padding: 10px 50px;
+  }
+  
+  footer .services {
+    display: -ms-grid;
+    display: grid;
+    font-size: x-small;
+    -ms-grid-columns: (75px)[auto-fill];
+        grid-template-columns: repeat(auto-fill, 75px);
+  }
+  
+  footer .followUs, footer .contactUs {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+  }

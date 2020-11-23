@@ -1,0 +1,190 @@
+.disp{
+    height: 400px;
+    background: url("../img/Homedis.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .textCont{
+        position: absolute;
+        right: 60px;
+        width: 400px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+    }
+    .dropdowns{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        width: calc(100% - 500px);
+        height: 38px;
+        position: absolute;
+        bottom: 70px;
+    }
+}
+
+
+.Tabs{
+    ul{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: left;
+        li{
+            display: block;
+            margin:0 15px;
+            border-bottom: .5px solid;
+            cursor: pointer;
+            padding: 5px;
+            position: relative;
+            transition: .3s;
+
+            &.active,&:hover{
+                transition: .3s;
+                border: 0;
+                font-weight: 900;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    height: 3px;
+                    width: 100%;
+                    background: rgb(0, 0, 0);
+                    animation:tabAnim .5s ease-in ;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+.newCarsBikes{
+    margin:0px;
+    .cont{
+        padding: 10px;
+        &>div:nth-child(1){
+           
+            button{
+                width: fit-content;
+                height: fit-content;
+                margin:10px 0px;
+                display: block;
+                border-radius: 10% 35% 35% 10% / 10% 50% 50% 10%    ;
+                border: solid #707070 1px;
+                padding: 5px 10px;
+                font-size: 15px;
+                background: #f8f8f9;
+                
+                &:hover,&.active{
+                    background: #063051;
+                    transition: .5s;
+                    color: white;
+                }
+            }
+        }
+        &>div:nth-child(2){
+            height: 250px;
+            .swiper-slide{
+                display: grid;
+                grid-gap: 20px;
+                grid-auto-flow: column;
+            }
+            .card{
+                height: 230px;
+
+            }
+        }
+    }
+}
+.news{
+    .swiper-slide{
+        img{
+            width: 293px;
+        }
+        height: 250px;
+    }
+    .col-4{
+        margin-left: 10px;
+    }
+    .col-7{
+        font-size: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,50%);
+        &>div{
+            display: grid;
+            grid-template-columns: 80px auto;
+        }
+        &>.action{
+            margin-top: 20px;
+            grid-template-columns: 200%;
+            width: 100%;
+            height: fit-content;
+            place-items: center;
+        }
+    }
+    padding-bottom: 20px;
+}
+
+
+.compare{
+    .col-4>div{
+        padding: 20px;
+        border-radius: 15px;
+        background: #d4cfcf;
+        input,button,div{
+            margin-top: 5px;
+            border-radius: 25px;
+        }
+    }
+    
+    .Tabs{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        .sliderControll{
+            position: relative;
+            width: 80px;
+            .swiper-button-prev,.swiper-button-next{
+                &::after{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .col-8{
+        .swiper-slide{
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    }
+}
+
+.dealings{
+    padding: 30px;
+}
+
+@keyframes tabAnim{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

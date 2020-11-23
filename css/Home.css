@@ -1,0 +1,225 @@
+.disp {
+  height: 400px;
+  background: url("../img/Homedis.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.disp .textCont {
+  position: absolute;
+  right: 60px;
+  width: 400px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: white;
+}
+
+.disp .dropdowns {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 500px);
+  height: 38px;
+  position: absolute;
+  bottom: 70px;
+}
+
+.Tabs ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.Tabs ul li {
+  display: block;
+  margin: 0 15px;
+  border-bottom: .5px solid;
+  cursor: pointer;
+  padding: 5px;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.Tabs ul li.active, .Tabs ul li:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 0;
+  font-weight: 900;
+}
+
+.Tabs ul li.active::after, .Tabs ul li:hover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: black;
+  -webkit-animation: tabAnim .5s ease-in;
+          animation: tabAnim .5s ease-in;
+}
+
+.newCarsBikes {
+  margin: 0px;
+}
+
+.newCarsBikes .cont {
+  padding: 10px;
+}
+
+.newCarsBikes .cont > div:nth-child(1) button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px 0px;
+  display: block;
+  border-radius: 10% 35% 35% 10% / 10% 50% 50% 10%;
+  border: solid #707070 1px;
+  padding: 5px 10px;
+  font-size: 15px;
+  background: #f8f8f9;
+}
+
+.newCarsBikes .cont > div:nth-child(1) button:hover, .newCarsBikes .cont > div:nth-child(1) button.active {
+  background: #063051;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+
+.newCarsBikes .cont > div:nth-child(2) {
+  height: 250px;
+}
+
+.newCarsBikes .cont > div:nth-child(2) .swiper-slide {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+}
+
+.newCarsBikes .cont > div:nth-child(2) .card {
+  height: 230px;
+}
+
+.news {
+  padding-bottom: 20px;
+}
+
+.news .swiper-slide {
+  height: 250px;
+}
+
+.news .swiper-slide img {
+  width: 293px;
+}
+
+.news .col-4 {
+  margin-left: 10px;
+}
+
+.news .col-7 {
+  font-size: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 50%);
+}
+
+.news .col-7 > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px auto;
+      grid-template-columns: 80px auto;
+}
+
+.news .col-7 > .action {
+  margin-top: 20px;
+  -ms-grid-columns: 200%;
+      grid-template-columns: 200%;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  place-items: center;
+}
+
+.compare .col-4 > div {
+  padding: 20px;
+  border-radius: 15px;
+  background: #d4cfcf;
+}
+
+.compare .col-4 > div input, .compare .col-4 > div button, .compare .col-4 > div div {
+  margin-top: 5px;
+  border-radius: 25px;
+}
+
+.compare .Tabs {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.compare .Tabs .sliderControll {
+  position: relative;
+  width: 80px;
+}
+
+.compare .Tabs .sliderControll .swiper-button-prev::after, .compare .Tabs .sliderControll .swiper-button-next::after {
+  font-size: 15px;
+}
+
+.compare .col-8 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dealings {
+  padding: 30px;
+}
+
+@-webkit-keyframes tabAnim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes tabAnim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
