@@ -328,27 +328,24 @@ function homePage(){
             <div class="blueBox">
                 <h6> Find Dealer/Service Centre </h6>
                 <div class="forms">
-                    <select name="" id="">
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                    </select><br>
-                    <select name="" id="">
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                    </select><br>
-                    <select name="" id="">
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                        <option value="">sdfsdf</option>
-                    </select><br>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                     <button class="btn bg-light">
                         Submit
                     </button>
@@ -356,14 +353,84 @@ function homePage(){
             </div>
         </div>
         <div  class="col-4"></div>
-        <div class="col-4">
-            <h6> Our database includes complete details of : </h6>
+        <div class="col-4 compDetailes">
+            
             <ul>
-                <li>Vehicles available in India </li>
-                <li>Vehicle Dealers/Showrooms  </li>
-                <li>Vehicle Service Centres </li>
-                <li>Towing Service Centres</li>
+                <li><h6> Our database includes complete details of : </h6></li>
+                <li><i class="if if-check"></i>Vehicles available in India </li>
+                <li><i class="if if-check"></i>Vehicle Dealers/Showrooms  </li>
+                <li><i class="if if-check"></i>Vehicle Service Centres </li>
+                <li><i class="if if-check"></i>Towing Service Centres</li>
             </ul>
+        </div>
+    </div>
+</div>
+<div class="roundCircl container card">
+    <div class="row">
+        <div class="buy col-6">
+            <div>
+                <h6> Buy Car/Bike </h6>
+                <nav class="row Tabs">
+                    <ul>
+                        <li><i class="if if-car"></i>New Cars</li>
+                        <li><i class="if if-directions-bike"></i>New Bikes</li>
+                    </ul>
+                </nav>
+                <div class="slid">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/ranger.png" alt="" class="card-img-top">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ranger.png" alt="" class="card-img-top">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/ranger.png" alt="" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button style="margin-top:15px;" class="btn btn-primary">
+                    Visit Market Place 
+                </button>
+            </div>
+        </div>
+        <div class="sell col-6">
+            <div>
+                <h5> Sell Car/Bike </h5>
+                <div> Post your Ad now for free! </div>
+                <div class="card">
+                    <div class="Switch">
+                        <div>
+                            <span>New Cars</span>
+                            <span class="active">New Cars</span>
+                        </div>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="btn btn-primary">
+                    Post Ad 
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

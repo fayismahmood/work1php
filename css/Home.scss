@@ -178,13 +178,107 @@
 
 .dealings{
     padding: 30px;
-}
+    .compDetailes{
+        display: grid;
+        place-items: center;
+        li{
+            display: block;
+            line-height: 40px;
+            i{
+                margin-right: 10px;
+                display: inline-block;
+            }
+        }
+    }
+    
+    .blueBox{
+        margin-top: 20px;
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(#063051,#4288bd);
+        border-radius: 18px;
+        color: white;
+        &>.forms{
+            display: grid;
+            grid-auto-flow: row;
+            place-items: center;
+            &>*{
+                margin: 5px 0px;
+            }
+        }
 
+    }
+}
+.roundCircl{
+    padding: 35px;
+    text-align: center;
+    .sell{
+        .card{
+            padding: 15px;
+            &>*{
+                margin: 5px;
+            }
+        }
+    }
+
+
+    .slid{
+        .swiper-wrapper{
+            width: 230px;
+
+        }
+        img{
+            width: 230px;
+        }
+    }
+    .row>div>div{
+        border-radius: 48% 52% 42% 58% / 51% 46% 54% 49%  ;
+        border: solid 1px #063051;
+        padding: 60px;
+        background: #eef0f2;
+        display: grid;
+        place-items: center;
+        grid-auto-flow: row;
+        li{
+            display: grid;
+            grid-auto-rows: 41px 15px;
+            place-items: center;
+            i{
+                display: block;
+                font-size: 40px;
+            }
+        }
+    }
+}
 @keyframes tabAnim{
     0%{
         width: 0;
     }
     100%{
         width: 100%;
+    }
+}
+
+
+
+
+.Switch{
+    &>div{
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 5px;
+        background: rgb(175, 175, 236);
+        border-radius: 25px;
+
+        border: solid 1px rgb(141, 128, 199);
+        span{
+            padding: 0 5px;
+            border-radius: 25px;
+            &.active{
+                background: white;
+                border: solid 1px rgb(141, 128, 199);
+
+            }
+        }
     }
 }

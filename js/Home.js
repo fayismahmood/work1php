@@ -39,3 +39,22 @@ var mySwiper = new Swiper('.newCarsBikes .swiper-container', {
   
   
   })
+
+
+
+  var swiper = new Swiper('.roundCircl .swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: '.roundCircl .swiper-pagination',
+    },
+  });
